@@ -13,7 +13,7 @@ def msg():
     response = messagebox.askyesno("Conformation", "Do you want to calculate denomination")
     if response:
         open_calculator()
-button1= Button(root, text="START CALCULATING")
+button1 = Button(root, text="START CALCULATING", command=msg)
 button1.pack(pady=10)
 
 def open_calculator():
