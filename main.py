@@ -40,13 +40,13 @@ def open_calculator():
     def calculate():
         try:
             amount = int(amount_entry.get())
-            note1000 = amount / 1000
+            note1000 = amount // 1000
             amount %= 1000
 
-            note500 = amount / 500
+            note500 = amount // 500
             amount %= 500
 
-            note100 = amount / 100
+            note100 = amount // 100
             amount %= 100
 
             t1.delete(0, END)
